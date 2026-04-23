@@ -140,8 +140,18 @@ Simulated attacker actions:
 
 - Created a new user account  
 - Added user to Administrators group  
-- Executed commands via PowerShell  
+- Executed commands via PowerShell
 
+#### Creation a New User Account
+
+```cmd
+net user attacker P@ssw0rd! /add
+```
+
+#### Add User to Administrators Group
+```cmd
+net localgroup administrators attacker /add
+```
 **Detection:**
 - User creation logged  
 - Privilege escalation detected  
