@@ -38,4 +38,4 @@ The lab environment consists of:
 - Windows 10 VM (Target + Sysmon Agent)
 - Kali Linux (Attacker)
 
-![Lab Architecture Diagram](Lab Architecture Diagram.png)
+![Lab Architecture Diagram](https://github.com/mukhtaradekola/SOC-Analyst-Home-Lab-Attack-Detection-Analysis/blob/main/Lab%20Architecture%20Diagram.png)
