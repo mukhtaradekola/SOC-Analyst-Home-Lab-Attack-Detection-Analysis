@@ -24,7 +24,7 @@ The primary objective was to generate real attack scenarios and analyze logs to 
 - Wazuh (Installed on Ubuntu Server) – SIEM for log collection and detection  
 - Sysmon – Endpoint monitoring and logging  
 - Kali Linux – Attacker machine  
-- Windows 10 VM – Target system  
+- Windows 11 VM – Target system  
 - Hydra – Brute force attack simulation  
 - PowerShell – Execution and persistence techniques  
 
