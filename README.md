@@ -84,6 +84,8 @@ A brute force attack was launched from Kali Linux targeting the Windows RDP serv
 ### Brute Force Attack (Hydra)
 
 ```bash
+sudo apt install hydra -y
+
 hydra -l mayor -P /usr/share/wordlists/rockyou.txt rdp://192.168.x.x
 ```
 
@@ -101,12 +103,17 @@ hydra -l mayor -P /usr/share/wordlists/rockyou.txt rdp://192.168.x.x
 
 A Base64 encoded PowerShell command was executed to simulate obfuscated attacker behavior.
 
-## PowerShell commands
-
-```markdown
 ### PowerShell Encoded Execution
 
 ```powershell
+TO generate encoded output
+$Text = "Start-Process notepad"
+$Bytes = [System.Text.Encoding]::Unicode.GetBytes($Text)
+$Encoded = [Convert]::ToBase64String($Bytes)
+$Encoded
+
+Execution of encoded output for attack simulation
+
 powershell.exe -EncodedCommand UwB0AGEAcgB0AC0AUABYAG8AYWBIAHMAcwAgAG4AbwB0AGUACABHAGQA
 ```
 
