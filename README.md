@@ -38,7 +38,26 @@ The lab environment consists of:
 - Windows 10 VM (Target + Sysmon Agent)
 - Kali Linux (Attacker)
 
-![Lab Architecture Diagram] (Lab Architecture Diagram.png)
+                ┌───────────────────────┐
+                │ Kali Linux (Attacker) │
+                │   IP: 192.168.x.x     │
+                └──────────┬────────────┘
+                           │
+                           │ Attack Traffic
+                           ▼
+                ┌───────────────────────┐
+                │  Windows 10 (Target)  │
+                │  Sysmon + Wazuh Agent │
+                │  IP: 192.168.x.x      │
+                └──────────┬────────────┘
+                           │
+                           │ Log Forwarding
+                           ▼
+                ┌──────────────────────────┐
+                │Ubuntu Server (Wazuh SIEM)│
+                │Wazuh Manager + Dashboard │
+                │ IP: 192.168.x.x          │
+                └──────────────────────────┘
 
 
 ---
