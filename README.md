@@ -37,3 +37,5 @@ The lab environment consists of:
 - Ubuntu Server (Wazuh SIEM)
 - Windows 10 VM (Target + Sysmon Agent)
 - Kali Linux (Attacker)
+
+![Lab Architecture Diagram](metrics.jpeg)
