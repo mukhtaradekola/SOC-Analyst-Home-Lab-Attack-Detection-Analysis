@@ -38,4 +38,118 @@ The lab environment consists of:
 - Windows 10 VM (Target + Sysmon Agent)
 - Kali Linux (Attacker)
 
-![Lab Architecture Diagram](https://github.com/mukhtaradekola/SOC-Analyst-Home-Lab-Attack-Detection-Analysis/blob/main/Lab%20Architecture%20Diagram.png)
+![Lab Architecture Diagram] (Lab Architecture Diagram.png)
+
+
+---
+
+## Steps
+
+### 1. Lab Setup
+
+- Installed Ubuntu Server on VirtualBox  
+- Installed and configured Wazuh SIEM on Ubuntu Server  
+- Installed Wazuh agent on Windows 10 machine  
+- Installed Sysmon for detailed logging  
+- Configured network communication between all VMs  
+
+*Ref 1: Lab Architecture Diagram*  
+(Add screenshot here)
+
+---
+
+### 2. Brute Force Attack (Initial Access)
+
+A brute force attack was launched from Kali Linux targeting the Windows RDP service using Hydra.
+
+**Detection:**
+- Multiple failed login attempts detected  
+- Event ID 4625 generated  
+- Attacker IP successfully identified  
+
+*Ref 2: Brute Force Detection in Wazuh*  
+(Add screenshot here)
+
+---
+
+### 3. PowerShell Attack (Execution)
+
+A Base64 encoded PowerShell command was executed to simulate obfuscated attacker behavior.
+
+**Detection:**
+- PowerShell execution detected  
+- Encoded command flagged  
+- Suspicious process chain identified  
+
+*Ref 3: PowerShell Detection*  
+(Add screenshot here)
+
+---
+
+### 4. Persistence (Scheduled Task)
+
+A scheduled task was created to simulate persistence on the compromised system.
+
+**Detection:**
+- Task creation activity logged  
+- Repeated execution pattern identified  
+
+*Ref 4: Persistence Detection*  
+(Add screenshot here)
+
+---
+
+### 5. Lateral Movement / Privilege Escalation
+
+Simulated attacker actions:
+
+- Created a new user account  
+- Added user to Administrators group  
+- Executed commands via PowerShell  
+
+**Detection:**
+- User creation logged  
+- Privilege escalation detected  
+- Suspicious command execution observed  
+
+*Ref 5: Lateral Movement Detection*  
+(Add screenshot here)
+
+---
+
+### 6. Attack Timeline Correlation
+
+All attack stages were correlated in Wazuh:
+
+- Initial Access → Brute Force  
+- Execution → PowerShell  
+- Persistence → Scheduled Task  
+- Lateral Movement → Admin Activity  
+
+*Ref 6: Wazuh Dashboard Overview*  
+(Add screenshot here)
+
+---
+
+## MITRE ATT&CK Mapping
+
+- T1110 – Brute Force  
+- T1059.001 – PowerShell  
+- T1053 – Scheduled Task  
+- T1021 – Remote Services  
+- T1136 – Create Account  
+
+---
+
+## Conclusion
+
+This project demonstrates the ability to simulate real-world cyber attacks and detect them using a SIEM platform deployed on Ubuntu Server.
+
+It highlights key SOC analyst skills including:
+
+- Threat detection  
+- Log analysis  
+- Incident investigation  
+- Attack correlation  
+
+This lab provides a strong foundation for real-world SOC operations and cybersecurity defense strategies.
