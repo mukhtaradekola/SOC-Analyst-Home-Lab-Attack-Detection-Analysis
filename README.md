@@ -38,4 +38,4 @@ The lab environment consists of:
 - Windows 10 VM (Target + Sysmon Agent)
 - Kali Linux (Attacker)
 
-![Lab Architecture Diagram](metrics.jpeg)
+![Lab Architecture Diagram](Lab Architecture Diagram.png)
