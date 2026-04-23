@@ -81,6 +81,12 @@ The lab environment consists of:
 
 A brute force attack was launched from Kali Linux targeting the Windows RDP service using Hydra.
 
+### Brute Force Attack (Hydra)
+
+```bash
+hydra -l mayor -P /usr/share/wordlists/rockyou.txt rdp://192.168.x.x
+```
+
 **Detection:**
 - Multiple failed login attempts detected  
 - Event ID 4625 generated  
@@ -94,6 +100,16 @@ A brute force attack was launched from Kali Linux targeting the Windows RDP serv
 ### 3. PowerShell Attack (Execution)
 
 A Base64 encoded PowerShell command was executed to simulate obfuscated attacker behavior.
+
+## PowerShell commands
+
+```markdown
+### PowerShell Encoded Execution
+
+```powershell
+powershell.exe -EncodedCommand UwB0AGEAcgB0AC0AUABYAG8AYWBIAHMAcwAgAG4AbwB0AGUACABHAGQA
+```
+
 
 **Detection:**
 - PowerShell execution detected  
