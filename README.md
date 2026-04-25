@@ -162,7 +162,6 @@ net localgroup administrators attacker /add
 - Suspicious command execution observed  
 
 *Ref 5: Lateral Movement Detection*  
-(Add screenshot here)
 
 ---
 
@@ -176,7 +175,6 @@ All attack stages were correlated in Wazuh:
 - Lateral Movement → Admin Activity  
 
 *Ref 6: Wazuh Dashboard Overview*  
-(Add screenshot here)
 
 ---
 
