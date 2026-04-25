@@ -123,7 +123,6 @@ powershell.exe -EncodedCommand UwB0AGEAcgB0AC0AUABYAG8AYWBIAHMAcwAgAG4AbwB0AGUAC
 - Suspicious process chain identified  
 
 *Ref 3: PowerShell Detection*  
-(Add screenshot here)
 
 ---
 
@@ -136,7 +135,6 @@ A scheduled task was created to simulate persistence on the compromised system.
 - Repeated execution pattern identified  
 
 *Ref 4: Persistence Detection*  
-(Add screenshot here)
 
 ---
 
