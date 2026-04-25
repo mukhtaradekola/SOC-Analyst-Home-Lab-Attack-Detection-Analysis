@@ -73,7 +73,6 @@ The lab environment consists of:
 - Configured network communication between all VMs  
 
 *Ref 1: Lab Architecture Diagram*  
-(Add screenshot here)
 
 ---
 
@@ -95,7 +94,7 @@ sudo apt install hydra -y
 - Attacker IP successfully identified  
 
 *Ref 2: Brute Force Detection in Wazuh*  
-(Add screenshot here)
+
 
 ---
 
