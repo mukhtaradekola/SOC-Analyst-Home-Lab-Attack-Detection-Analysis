@@ -92,13 +92,21 @@ sudo apt install hydra -y
 - Attacker IP successfully identified  
 
 *Ref 2: Brute Force Detection in Wazuh*
+
 Wazuh Security Events Dashboard
+
 ![Wazuh Security Events Dashboard](Bruteforce-logs.png)
+
 Log Analysis - Event Metadata
+
 ![Log Analysis - Event Metadata](Bruteforce-details.png)
+
 Identity Correlation
+
 ![Identity Correlation](Bruteforce-details-2.png)
+
 Technical Root Cause
+
 ![Technical Root Cause](bruteforce-details-3.png)
 
 
