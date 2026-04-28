@@ -185,6 +185,18 @@ net localgroup administrators attacker /add
 
 *Ref 5: Lateral Movement Detection*  
 
+**Tactic Correlation - Persistence, Discovery, and Privilege Escalation**
+
+![Tactic Correlation - Persistence, Discovery, and Privilege Escalation](Lateral-Movement-Privilege-Escalation-logs.png)
+
+**Unauthorized Account Creation**
+
+![Unauthorized Account Creation - Attacker User Added](Privilege-Escalation-test-2.png)
+
+**Privilege Escalation - Attacker Added to Local Administrators Group**
+
+![Privilege Escalation - Attacker Added to Local Administrators Group](Privilege-Escalation-log-details.png)
+
 ---
 
 ### 6. Attack Timeline Correlation
