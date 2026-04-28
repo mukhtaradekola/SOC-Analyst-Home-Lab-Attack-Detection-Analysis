@@ -93,7 +93,7 @@ sudo apt install hydra -y
 
 *Ref 2: Brute Force Detection in Wazuh*
 
-![Wazuh Security Events Dashboard]() 
+![Wazuh Security Events Dashboard](Bruteforce-logs.jpg)
 
 ---
 
