@@ -93,19 +93,19 @@ sudo apt install hydra -y
 
 *Ref 2: Brute Force Detection in Wazuh*
 
-Wazuh Security Events Dashboard
+**Wazuh Security Events Dashboard:** Alerts showing a high-frequency sequence of Windows logon failures (Event ID 4625) and subsequent account lockout (Rule 60115).
 
 ![Wazuh Security Events Dashboard](Bruteforce-logs.png)
 
-Log Analysis - Event Metadata
+**Log Analysis - Event Metadata:** Detailed breakdown of a single authentication failure event, highlighting the NTLM authentication package and the source IP of the attacking machine.
 
 ![Log Analysis - Event Metadata](Bruteforce-details.png)
 
-Identity Correlation
+**Identity Correlation:** Mapping the failed login attempt to the target username "mayor" and identifying the source workstation as "kali."
 
 ![Identity Correlation](Bruteforce-details-2.png)
 
-Technical Root Cause
+**Technical Root Cause:** Analysis of the Failure Information field showing Status Code 0xC000006D, confirming an invalid username or bad password during the brute-force attempt.
 
 ![Technical Root Cause](bruteforce-details-3.png)
 
@@ -136,7 +136,15 @@ powershell.exe -EncodedCommand UwB0AGEAcgB0AC0AUABYAG8AYWBIAHMAcwAgAG4AbwB0AGUAC
 - Encoded command flagged  
 - Suspicious process chain identified  
 
-*Ref 3: PowerShell Detection*  
+*Ref 3: PowerShell Detection*
+
+**Execution Logs:** Shows the progression from Logon Success to Command and Control (T1105) and finally Lateral Movement (T1570).
+
+![Telemetry of Execution and Lateral Movement](execution-logs.png)
+
+**PowerShell Execution:** This highlights your ability to identify obfuscated attacks, specifically spotting the -EncodedCommand flag used to hide malicious scripts.
+
+![Malicious PowerShell Analysis - Base64 Encoded Command](powershell-execution.png)
 
 ---
 
