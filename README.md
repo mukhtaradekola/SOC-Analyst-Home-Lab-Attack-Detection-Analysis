@@ -156,8 +156,6 @@ A scheduled task was created to simulate persistence on the compromised system.
 - Task creation activity logged  
 - Repeated execution pattern identified  
 
-*Ref 4: Persistence Detection*  
-
 ---
 
 ### 5. Lateral Movement / Privilege Escalation
@@ -183,7 +181,7 @@ net localgroup administrators attacker /add
 - Privilege escalation detected  
 - Suspicious command execution observed  
 
-*Ref 5: Lateral Movement Detection*  
+*Ref 54: Lateral Movement Detection*  
 
 **Tactic Correlation - Persistence, Discovery, and Privilege Escalation**
 
@@ -208,7 +206,9 @@ All attack stages were correlated in Wazuh:
 - Persistence → Scheduled Task  
 - Lateral Movement → Admin Activity  
 
-*Ref 6: Wazuh Dashboard Overview*  
+*Ref 5: Wazuh Dashboard Overview*
+
+![Wazuh Dashboard Overview](Wazuh-Dashboard.png)
 
 ---
 
