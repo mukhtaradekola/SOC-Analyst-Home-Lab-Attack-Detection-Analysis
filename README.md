@@ -72,8 +72,6 @@ The lab environment consists of:
 - Installed Sysmon for detailed logging  
 - Configured network communication between all VMs  
 
-*Ref 1: Lab Architecture Diagram*  
-
 ---
 
 ### 2. Brute Force Attack (Initial Access)
@@ -93,8 +91,9 @@ sudo apt install hydra -y
 - Event ID 4625 generated  
 - Attacker IP successfully identified  
 
-*Ref 2: Brute Force Detection in Wazuh*  
+*Ref 2: Brute Force Detection in Wazuh*
 
+![Wazuh Security Events Dashboard]() 
 
 ---
 
